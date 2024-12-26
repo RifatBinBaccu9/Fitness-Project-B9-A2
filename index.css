@@ -746,4 +746,153 @@ width: 60%;
 
 .team{
     background: #000;
+    padding: 50px 0;
+}
+.meet{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+.start{
+    width: 85%;
+    margin: 0 auto;
+}
+.image{
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    background: #1A1A1A;
+}
+.imging{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.image img{
+    height: 300px;
+    width: 100%;
+    border-radius: 10px;
+}
+@media screen and (max-width: 576px) {
+    
+.team{
+    background: #000;
+    padding: 50px 0;
+}
+.meet{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+.start{
+    width: 85%;
+    margin: 0 auto;
+}
+.image{
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    background: #1A1A1A;
+}
+.imging{
+    display: block;
+
+}
+.image img{
+    height: 300px;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+}
+
+.Fitness{
+   display: flex;
+   width: 85%;
+   margin: 0 auto;
+   gap: 50px;
+}
+.Fitness1{
+    width: 40%;
+}
+.Fitness1 h1{
+    color: #E6533C;
+    margin-bottom: 20px;
+}
+.Fitness2{
+    width: 60%;
+    display: flex;
+}
+.Fitness-left{
+    width: 50%;
+}
+.Fitness-left h1{
+    font-size: 23px;
+    margin-bottom: 30px;
+}
+.Fitness-right h1{
+    font-size: 23px;
+    margin-bottom: 30px;
+}
+.Fitness-right{
+width: 50%;
+}
+.Fitness-right div li{
+    color: #979595;
+    list-style: none;
+    margin-bottom: 10px;
+}
+.Fitness-left div li{
+    color: #979595;
+    list-style: none;
+    margin-bottom: 10px;
+}
+.line{
+    width: 90%;
+    margin:20px auto;
+}
+@media screen and (max-width: 576px) {
+.Fitness{
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    gap: 50px;
+ }
+ .Fitness1{
+     width: 100%;
+ }
+ .Fitness1 h1{
+     color: #E6533C;
+     margin-bottom: 20px;
+ }
+ .Fitness2{
+     width: 90%;
+     display: block;
+ }
+ .Fitness-left{
+     width: 50%;
+     margin-top: 20px;
+ }
+ .Fitness-left h1{
+     font-size: 23px;
+     margin-bottom: 30px;
+ }
+ .Fitness-right h1{
+     font-size: 23px;
+     margin-bottom: 30px;
+ }
+ .Fitness-right{
+    margin-top: 20px;
+ width: 50%;
+ }
+ .Fitness-right div li{
+     color: #979595;
+     list-style: none;
+     margin-bottom: 10px;
+ }
+ .Fitness-left div li{
+     color: #979595;
+     list-style: none;
+     margin-bottom: 10px;
+ } 
 }
