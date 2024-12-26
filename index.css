@@ -1,0 +1,661 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+body p{
+    color: #737373;
+    font-size: 20px;
+    font-weight: 400;
+}
+body h1{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 800;
+}
+.bnner-btn-left{
+    color: #fff;
+    border: 1px solid #DB503A;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    background: #DB503A;
+    margin-right: 15px;
+}
+.bnner-btn-right{
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    background: #000;
+}
+/* Background color section */
+.bg-colore-add {
+    background: #000;
+    width: 100%;
+}
+
+/* Header section */
+header {
+    width: 85%;
+    margin: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+/* Nav title */
+.nav-title {
+    color: #DB503A;
+    font-family: "Inter", sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+/* Nav pages */
+.nav-pages {
+    border: 1px solid #2F2F2F;
+    border-radius: 50px;
+    width: 42%;
+}
+
+.nav-pages ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0px;
+    z-index: 100;
+}
+
+.nav-pages ul li {
+    list-style: none;
+}
+
+.nav-pages ul li a {
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 15px 25px;
+}
+
+.nav-home {
+    background: #E6533C;
+    border-radius: 50px;
+}
+
+/* Hide checkbox */
+#checkbox_toggle {
+    display: none;
+}
+
+/* Style hamburger and icons */
+.hamburger i {
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.hamburger .fa-bars {
+    display: none;
+}
+.hamburger .fa-times {
+    display: none;
+}
+
+/* Responsive navber */
+@media screen and (max-width: 576px) {
+
+    .nav-title {
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    header {
+        width: 90%;
+        margin: auto;
+    }
+
+    .nav-pages {
+        width: 100%;
+        display: flex;
+        border: none;
+        justify-content: flex-end;
+    }
+
+    .nav-pages ul {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 30%;
+        padding: 0;
+    }
+
+    .nav-pages ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-pages ul li a {
+        display: block;
+        padding: 15px 0;
+        border-bottom: 1px solid #2F2F2F;
+    }
+
+    .nav-home {
+        border-radius: 0;
+    }
+    /* Display hamburger icon */
+    .hamburger .fa-bars {
+        display: block;
+    }
+
+    /* Show cancel icon menu  opened */
+    #checkbox_toggle:checked + .hamburger .fa-bars {
+        display: none;
+    }
+
+    #checkbox_toggle:checked + .hamburger .fa-times {
+        display: block;
+    }
+
+    /* Show menu checkbox checked */
+    #checkbox_toggle:checked + .hamburger + .menu {
+        display: flex;
+    }
+}
+/* header section end */
+
+
+
+/* banner section start*/
+.banner-section{
+    display: flex;
+    width: 85%;
+    margin: auto;
+    justify-content: space-between;
+}
+/* banner left section */
+.banner-left{
+    color: #fff;
+}
+.banner-left h2{
+    font-size: 70px;
+    font-weight: 800;
+    font-family: "Inter", sans-serif;
+    width: 65%;
+    padding-top: 120px;
+}
+.banner-left h2 span{
+    font-family: "Dancing Script", cursive;
+}
+.banner-left p{
+    font-size: 20px;
+    font-weight: 400;
+    color: #8C8C8C;
+    width: 65%;
+    padding: 30px 0;
+}
+
+
+/* banner right section */
+.banner-right{
+position: relative;
+}
+.banner-right img{
+    margin-right: 50px;
+}
+.banner-card-left{
+    border-radius: 10px;
+    padding: 15px 30px;
+    display: flex;
+    position: absolute;
+    bottom: 126px;
+    left: -80px;
+    background: #2e2b2b;
+    opacity: 0.8;
+    gap: 10px;
+    align-items: center;
+
+}
+.video-play{
+    background: #E6533C;
+    color: #fff;
+    width:10px;
+    height: 17px;
+    padding: 7px 11px;
+    border-radius: 50%;
+}
+.video-tu{
+    color: #fff;
+}
+.video-tu h3{
+    font-size: 25px;
+    font-weight: 800;
+}
+.video-tu p{
+    color: #A7A5A2;
+    font-size: 16px;
+    font-weight: 400;
+}
+.banner-card-right{
+    border-radius: 10px;
+    padding: 15px;
+    position: absolute;
+    top: 150px;
+    right: 0;
+    background: #1a1818;
+    opacity: 0.8;
+    color: #fff;
+}
+.banner-card-right h3{
+    font-size: 25px;
+    font-weight: 800;
+}
+.banner-card-right p{
+    color: #A7A5A2;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/*Responsive banner section */
+@media screen and (max-width: 576px) {
+    .banner-section{
+        display: block;
+        width: 90%;
+        margin: auto;
+    } 
+
+    /* banner left section */
+    .banner-left h2{
+        font-size: 50px;
+        font-weight: 600;
+        width: 90%;
+        margin: auto;
+        padding-top: 120px;
+    }
+    .banner-left p{
+        font-size: 20px;
+        font-weight: 400;
+        width: 90%;
+        margin: auto;
+        padding: 30px 0;
+    }
+   .btn-section{
+    text-align: center;
+    margin-bottom: 40px;
+   } 
+.bnner-btn-left{
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 15px;
+}
+.bnner-btn-right{
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* banner right section */
+.banner-right{
+    position: relative;
+    }
+    .banner-right img{
+        margin-left: 100px;
+    }
+    .banner-card-left{
+        position: absolute;
+        bottom: 250px;
+        left: 50px;
+    
+    }
+    .banner-card-right{
+        position: absolute;
+        top: 150px;
+        right: 0;
+    }
+}
+/* banner section end */
+
+
+/* Habits section start */
+.habits{
+    width: 85%;
+    margin: 90px auto;
+}
+.habit-section h1{
+    color: #fff;
+    font-size: 46px;
+    font-weight: 800;
+    text-align: center;
+}
+.habit-section p{
+    color: #808080;
+    font-size: 20px;
+    font-weight:500;
+    width: 65%;
+    margin: auto;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* habits-card */
+.card-section{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 40px 0;
+}
+.habits-card{
+    text-align: center;
+}
+.habits-card img{
+  border-radius: 50%;
+}
+.habits-card h3{
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  padding: 10px 0;
+}
+.habits-card p{
+  font-size: 16px;
+  font-weight: 400;
+  width: 70%;
+  margin: auto;
+}
+
+/*Responsive habits section */
+@media screen and (max-width: 576px) {
+    .habits{
+        width: 90%;
+        margin: 90px auto;
+    }
+    .habit-section p{
+        width: 75%;
+        margin: auto;
+        text-align: center;
+        padding: 20px 0;
+    }
+    
+    /* habits-card */
+    .card-section{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 40px 0;
+    }
+    .habits-card{
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+}
+/* Habits section end */
+
+
+/* Run an Extra start  */
+
+.run-mein{
+    display: flex;
+    color: floralwhite;
+    width: 75%;
+    margin:90px auto;
+    background-color: #222222;
+    border-radius: 10px;
+    padding: 50px;
+    gap: 200px;
+}
+
+.run-left-site{
+    width: 60%;
+}
+.run-left-site h1{
+
+}
+.run-left-site p{
+    font-size: 20px;
+    font-weight: 400;
+    margin: 20px 0;
+}
+.run-left-site button{
+    color: #fff;
+    border: 1px solid #DB503A;
+    padding: 10px 50px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    background: #DB503A;
+    margin-right: 15px;
+}
+.run-right-site img{
+    width: 300px;
+    height: 100%;
+    border-radius: 10px;
+}
+
+@media screen  and (max-width: 576px){
+    .run-mein{
+        display: block;
+        color: floralwhite;
+        width: 70%;
+        margin:50px auto;
+        background-color: #222222;
+        border-radius: 10px;
+        padding: 40px;
+        gap: 0;
+    }
+    
+    .run-left-site{
+        width: 90%;
+        margin: auto;
+    }
+    .run-left-site p{
+        font-size: 20px;
+        font-weight: 400;
+        margin: 20px 0;
+    }
+    .run-left-site button{
+        color: #fff;
+        border: 1px solid #DB503A;
+        padding: 10px 110px;
+        border-radius: 50px;
+        font-size: 18px;
+        font-weight: 600;
+        background: #DB503A;
+        margin-right: 0;
+    }
+    .run-right-site img{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        margin-top: 40px;
+    }
+}
+/* Run an Extra end */
+
+
+
+/* Trainings and Exercises start */
+.trainings{
+width: 85%;
+margin: auto;
+}
+.trainings p{
+    width: 70%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.imageTop{
+    display: flex;
+}
+.image1{
+    width: 25%;
+    background: url('./images/exercise1.jpg'), rgba(80, 210, 183);
+    background-size: cover;
+    background-blend-mode: overlay;
+    height: 200px;
+}
+.image2{
+    width: 50%;
+    background: url('./images/exercise2.png'), rgba(161, 75, 66);
+    background-size: cover;
+    background-blend-mode: overlay;
+    height: 200px;
+}
+.image3{
+    width: 25%;
+    background: url('./images/exercise3.png'), rgba(120, 120, 118);
+    background-size: cover;
+    background-blend-mode: overlay;
+    height: 200px;
+}
+
+.image4{
+    width: 45%;
+     background: url('./images/exercise4.png'), rgba(75, 75, 77);
+    background-size: cover;
+    background-blend-mode: overlay;
+    height: 200px;
+}
+.image5{
+    width: 25%;
+     background: url('./images/exercise5.jpg'), rgba(128, 183, 107);
+    background-size: cover;
+    background-blend-mode: overlay;
+    height: 200px;
+}
+.image6{
+    width: 30%;
+     background: url('./images/exercise6.jpg'), rgb(178, 199, 255);
+    background-size: cover;
+    background-blend-mode: overlay;
+    height: 200px;
+}
+
+@media screen and (max-width: 576px) {
+    .trainings{
+        width: 85%;
+        margin: auto;
+        }
+        .trainings p{
+            width: 90%;
+            margin-top: 20px;
+            margin-bottom: 50px;
+        }  
+.image1{
+    width: 50%;
+    background: url('./images/exercise1.jpg'), rgba(80, 210, 183);
+
+    background-size: cover;
+    background-blend-mode: overlay;
+    height: 200px;
+}
+.image2{
+    width: 50%;
+    background: url('./images/exercise2.png'), rgba(161, 75, 66);
+    background-size: cover;
+    background-blend-mode: overlay;
+    height: 200px;
+    background-position: top right;
+}
+.image3{
+ display: none;
+}
+
+.image4{
+    width: 45%;
+     background: url('./images/exercise4.png'), rgba(75, 75, 77);
+    background-size: cover;
+    background-blend-mode: overlay;
+    height: 200px;
+}
+.image5{
+    width: 55%;
+     background: url('./images/exercise5.jpg'), rgba(128, 183, 107);
+    background-size: cover;
+    background-blend-mode: overlay;
+    height: 200px;
+}
+.image6{
+display: none;
+}
+}
+/* Trainings and Exercises end */
+.calculator{
+    margin: 80px 0;
+}
+.BMI-Calculator{
+    width: 60%;
+    margin:50px auto;
+}
+
+.BMI{
+    background-color: rgba(34, 34, 34);
+   padding: 60px 0;
+}
+.bmi{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    gap: 100px;
+}
+.bmi-left h3{
+    padding-bottom: 40px;
+    color: #fff;
+    font-size: 24px;
+}
+.bmi-right h3{
+    padding-bottom: 20px;
+    color: #fff;
+    font-size: 24px;
+}
+.bmi-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.bmi-table th, 
+.bmi-table td {
+    border: 1px solid #393939;
+    padding: 10px;
+    text-align: center;
+}
+
+.bmi-table th {
+    color: white;
+    font-weight: bold;
+}
+.bmi-table td{
+    color: #b6b0b0;
+}
+.bmi-left{
+width: 40%;
+}
+.bmi-right{
+width: 60%;
+}
+
+.inputText {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.inputText input[type="text"] {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #393939;
+    border-radius: 5px;
+    font-size: 16px;
+    background: #393939;
+}
+
+/* */
